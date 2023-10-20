@@ -1,0 +1,95 @@
+{
+  "name": "@fpkit/nextjs",
+  "description": "Nextjs components",
+  "private": false,
+  "version": "0.2.5",
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "./libs/index.cjs",
+  "module": "./libs/index.js",
+  "types": "./libs/index.d.ts",
+  "files": [
+    "libs",
+    "src",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && tsup --dts",
+    "preview": "vite preview",
+    "package": "tsc && tsup --dts",
+    "package:watch": "tsc && tsup --watch --dts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "test:ci": "c8 vitest --ci --coverage",
+    "test:update": "vitest -u",
+    "trash": "trash 'libs'"
+  },
+  "dependencies": {
+    "@fpkit/react": "^0.3.20",
+    "@shawnsandy/first-paint": "^2.18.9",
+    "next": "^13.5.6",
+    "nextra": "^2.13.2",
+    "nextra-theme-blog": "^2.13.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-import-meta": "^7.10.4",
+    "@babel/preset-env": "^7.23.2",
+    "@babel/preset-react": "^7.22.15",
+    "@babel/preset-typescript": "^7.23.2",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/react": "^18.2.30",
+    "@types/react-dom": "^18.2.14",
+    "@types/react-test-renderer": "^18.0.5",
+    "@vitejs/plugin-react": "^4.1.0",
+    "@vitest/ui": "^0.33.0",
+    "babel-jest": "^29.7.0",
+    "c8": "^8.0.1",
+    "happy-dom": "^10.11.2",
+    "jest": "^29.7.0",
+    "jest-axe": "^7.0.1",
+    "jest-environment-jsdom": "^29.7.0",
+    "jsdom": "^22.1.0",
+    "npm-run-all": "^4.1.5",
+    "react-test-renderer": "^18.2.0",
+    "sass": "^1.69.4",
+    "trash-cli": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "vite-plugin-dts": "^3.6.0",
+    "vitest": "^0.33.0",
+    "vitest-axe": "^0.1.0"
+  },
+  "peerDependencies": {
+    "@fpkit/react": "^0.3.1",
+    "next": "^13.4.9",
+    "nextra": "^2.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawn-sandy/fpkit-nextjs.git#main"
+  },
+  "keywords": [
+    "components",
+    "nextjs",
+    "react"
+  ],
+  "author": "shawnsandy <shawnsandy04@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shawn-sandy/fpkit-nextjs/issues"
+  },
+  "homepage": "https://github.com/shawn-sandy/fpkit-nextjs/"
+}
