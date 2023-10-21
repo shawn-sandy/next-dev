@@ -17,6 +17,7 @@
     "access": "public"
   },
   "scripts": {
+    "start": "next dev",
     "dev": "vite",
     "build": "tsc && tsup --dts",
     "preview": "vite preview",
